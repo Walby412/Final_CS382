@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.12388753, g: 0.12818918, b: 0.13679248, a: 1}
+  m_AmbientSkyColor: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.5
@@ -244,6 +244,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155354427}
   m_CullTransparentMesh: 1
+--- !u!1 &167178837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6972536981241798869, guid: 2afb2ad7a98f17e408bc65c4e76ce062, type: 3}
+  m_PrefabInstance: {fileID: 863285823875317499}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &284371842
 GameObject:
   m_ObjectHideFlags: 0
@@ -551,6 +556,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371046546}
   m_CullTransparentMesh: 1
+--- !u!1 &409535734 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4459864851310106424, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
+  m_PrefabInstance: {fileID: 717147545}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &466236627
 GameObject:
   m_ObjectHideFlags: 0
@@ -760,6 +770,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4459864851310106429, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
   m_PrefabInstance: {fileID: 717147545}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &717147549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409535734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2974149c6fb01b409a280581634da96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1011841802 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
@@ -1246,6 +1268,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 528252692817399938, guid: 2afb2ad7a98f17e408bc65c4e76ce062, type: 3}
+      propertyPath: door
+      value: 
+      objectReference: {fileID: 167178837}
     - target: {fileID: 863285825263446732, guid: 2afb2ad7a98f17e408bc65c4e76ce062, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1302,6 +1328,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -24
       objectReference: {fileID: 0}
+    - target: {fileID: 4922735117507122962, guid: 2afb2ad7a98f17e408bc65c4e76ce062, type: 3}
+      propertyPath: hoverText
+      value: 
+      objectReference: {fileID: 1348060440}
     - target: {fileID: 7545191234562724521, guid: 2afb2ad7a98f17e408bc65c4e76ce062, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28
