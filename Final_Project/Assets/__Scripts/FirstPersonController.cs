@@ -233,6 +233,8 @@ public class FirstPersonController : MonoBehaviour
             playerCamera.transform.localEulerAngles = new Vector3(pitch, 0, 0);
         }
 
+        
+
         #region Camera Zoom
 
         if (enableZoom)
@@ -371,6 +373,28 @@ public class FirstPersonController : MonoBehaviour
         }
 
         CheckForInteraction();
+    }
+
+    public void UpdateMouseSensitivity(float sensitivityMultiplier)
+    {
+        mouseSensitivity = 2.0f * sensitivityMultiplier; // Adjust the base sensitivity
+    }
+
+    public void SetPlayerMovement(bool canMove)
+    {
+        cameraCanMove = canMove;
+
+        // Optionally, you can lock or unlock cursor based on movement
+        if (canMove)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+        else
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
 
     void FixedUpdate()
